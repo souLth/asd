@@ -1,0 +1,3 @@
+<!--pages/all/all.wxml-->
+<import src="/pages/search_tool/search_tool.wxml"/>
+<template is="search_tool"/>

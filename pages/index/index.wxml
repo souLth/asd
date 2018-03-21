@@ -1,0 +1,27 @@
+<!--index.wxml-->
+<import src="/pages/search_tool/search_tool.wxml"/>
+<template is="search_tool"/>
+<view class="tody_update">今日更新</view>
+<view class="img-container">
+            <block wx:for="{{todayUpdate}}" wx:for-item="item" wx:for-index="itemIdx">
+                <image bindtap="showMoreList" class="img-item" src="{{item.thumbSrc}}" mode="aspectFill"></image>
+            </block>     
+</view>
+<view class="recent_update">近期更新</view>
+<scroll-view class="recent-img-container">
+<block wx:for="{{recentUpdate}}" wx:for-item="item" wx:for-index="itemIdx">
+                <image bindtap="showMoreDetail" class="img-item" src="{{item.thumbSrc}}" mode="aspectFill"></image>
+            </block>  
+</scroll-view>
+<view class="container">
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+  <view class="usermotto">
+    <text class="user-motto">{{motto}}</text>
+  </view>
+</view>
