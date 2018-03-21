@@ -1,4 +1,0 @@
-/* pages/search_tool/search_tool.wxss */
-.search_tool{
-  font-size: 18px
-}

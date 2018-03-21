@@ -1,4 +1,0 @@
-<!--pages/search_tool/search_tool.wxml-->
-<template  name="search_tool">
-  <view class='search_tool' bindtap='openSearch'>搜索 </view>
-</template >

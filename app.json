@@ -3,8 +3,7 @@
     "pages/index/index",
     "pages/collect/collect",
     "pages/all/all",
-    "pages/search/search",
-    "pages/search_tool/search_tool"
+    "pages/search/search"
   ],
   "window": {
     "backgroundTextStyle": "light",

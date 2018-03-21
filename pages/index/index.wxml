@@ -1,6 +1,5 @@
 <!--index.wxml-->
-<import src="/pages/search_tool/search_tool.wxml"/>
-<template is="search_tool"/>
+<searchtool bind:gotoSearch="_gotoSearch" id="searchtool"></searchtool>
 <view class="tody_update">今日更新</view>
 <view class="img-container">
             <block wx:for="{{todayUpdate}}" wx:for-item="item" wx:for-index="itemIdx">

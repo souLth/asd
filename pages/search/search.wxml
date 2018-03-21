@@ -1,4 +1,4 @@
 <!--pages/search/search.wxml-->
-<template name="search">
-  <text>{{text}}</text>
-</template>
+<view class='input_container'>
+123
+</view>

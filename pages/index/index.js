@@ -55,6 +55,13 @@ Page({
       }
     })
   },
+  /**
+ * 生命周期函数--监听页面初次渲染完成
+ */
+  onReady: function () {
+    //获得dialog组件
+    this.searchtool = this.selectComponent("#searchtool");
+  },
   showMoreDetail:function(){
 
   },
@@ -70,7 +77,7 @@ Page({
   onShareAppMessage: function () {
 
   },
-  openSearch: function () {
-    console.log(222)
+  _gotoSearch:function(){
+    this.searchtool.gotoSearch()
   }
 })
