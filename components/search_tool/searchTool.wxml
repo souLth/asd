@@ -1,0 +1,2 @@
+<!--components/search_tool/searchTool.wxml-->
+<view class="search_tool" bindtap='_gotoSearch'>搜索</view>

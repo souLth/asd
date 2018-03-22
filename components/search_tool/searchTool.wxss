@@ -1,0 +1,4 @@
+/* components/search_tool/searchTool.wxss */
+.search_tool{
+  font-size: 0.8rem
+  }

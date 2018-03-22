@@ -1,7 +1,7 @@
 //index.js
 //获取应用实例
 const app = getApp()
-
+require
 Page({
   data: {
     userInfo: {},
@@ -55,12 +55,8 @@ Page({
       }
     })
   },
-  /**
- * 生命周期函数--监听页面初次渲染完成
- */
-  onReady: function () {
-    //获得dialog组件
-    this.searchtool = this.selectComponent("#searchtool");
+  onReady:function(){
+    this.searchTool=this.selectComponent('#searchTool')
   },
   showMoreDetail:function(){
 
@@ -77,7 +73,7 @@ Page({
   onShareAppMessage: function () {
 
   },
-  _gotoSearch:function(){
-    this.searchtool.gotoSearch()
+  openSearch: function () {
+    this.searchTool.gotoSearch()
   }
 })
